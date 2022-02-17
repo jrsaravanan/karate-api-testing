@@ -16,7 +16,7 @@ public class TestParallel {
 
     @Test
     public void runTestParallel() {
-        Results results = Runner.path("classpath:users", "classpath:posts", "classpath:comments", "classpath:todos")
+        Results results = Runner.path("classpath:users")
                 .outputCucumberJson(true)
                 .tags("~@ignore")
                 .parallel(10);
